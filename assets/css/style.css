@@ -20,3 +20,188 @@
     --light-lavender: hsl(241, 100%, 89%);
     --dark-gray-blue: hsl(224, 30%, 27%);
 }
+
+body, * {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Hanken Grotesk";
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card {
+    display: flex;
+
+    width: 750px;
+
+    border-radius: 30px;
+
+    box-shadow: 15px 20px 10px var(--pale-blue);
+}
+
+#card-section-1 {
+    background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+
+    border-radius: 30px;
+
+    padding: 30px 55px;
+
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#card-section-1 p{
+    color: white;
+
+    font-size: 25px;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+#card-section-1 p:first-child {
+    color: var(--light-lavender);
+
+    font-size: 20px;
+    font-weight: 500;
+
+    margin-bottom: 30px;
+}
+
+#card-section-1 div {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(var(--violet-blue), var(--persian-blue));
+
+    border-radius: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 30px;
+}
+
+#card-section-1 div span:first-child {
+    font-size: 76px;
+    font-weight: 800;
+
+    color: var(--white);
+}
+
+/* #card-section-1 div span {
+    font-size: 16px;
+    color: var(--light-lavender);
+    font-weight: 500;
+} */
+
+#card-section-1 span:last-child {
+    text-align: center;
+
+    font-size: 18px;
+    color: var(--light-lavender);
+
+    margin-bottom: 15px;
+}
+
+
+
+
+#card-section-2 {
+    background-color: var(--white);
+    width: 50%;
+    
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px 40px;
+}
+
+#card-section-2 p:first-child {
+    color: var(--dark-gray-blue);
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#card-section-2 div {
+    display: flex;
+    justify-content: space-between;
+}
+
+p:has(.bold) {
+    color: var(--dark-gray-blue);
+}
+
+.bold {
+    color: var(--dark-gray-blue);
+    font-weight: 800;
+}
+
+.border-div {
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.border-div span {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#reaction {
+    border: 0px;
+    color: var(--primary-red);
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+#memory {
+    border: 0px;
+    color: var(--primary-orangey-yellow);
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+#verbal {
+    border: 0px;
+    color: var(--primary-green-teal);
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+#visual {
+    border: 0px;
+    color: var(--primary-cobalt-blue);
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+button {
+    border: 0;
+    padding: 15px;
+
+    font-weight: 700;
+
+    background-color: var(--dark-gray-blue);
+    color: var(--white);
+
+    border-radius: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+
+    background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+}
